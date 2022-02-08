@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491711368740",
+    "project_id": "posimage-32f49",
+    "storage_bucket": "posimage-32f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491711368740:android:0d8f3e024de405e56652b1",
+        "android_client_info": {
+          "package_name": "com.stamford.pos22021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491711368740-lof1i3ov1ano1okrbh26fo8occ5rj2ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsKTkgUuiciig81asVlH4qTooLuDKnneg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491711368740-lof1i3ov1ano1okrbh26fo8occ5rj2ld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

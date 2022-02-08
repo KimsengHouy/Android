@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoS 2.2021</string>
+    <string name="stamford_login_header">แอปพลิเคชัน Stamford POS</string>
+    <string name="user">ชื่อผู้ใช้:</string>
+    <string name="password">รหัสผ่าน:</string>
+    <string name="login">เข้าสู่ระบบ</string>
+
+    <string name="command_center">ศูนย์บัญชาการ</string>
+    <string name="new_order">ออเดอร์ใหม่</string>
+    <string name="add_product">เพิ่มสินค้า</string>
+    <string name="play_music_in_background">เล่นเพลงในพื้นหลัง</string>
+    <string name="stop_music_in_background">หยุดเพลงในพื้นหลัง</string>
+
+
+    <string name="retrieve_order">เรียกค้นคำสั่งซื้อ</string>
+    <string name="submit_order">ส่งคำสั่งซื้อ</string>
+    <string name="baht">บาท</string>
+    <string name="branch_name">ชื่อสาขา:</string>
+    <string name="staff_id">รหัสพนักงาน:</string>
+    <string name="staff_name">ชื่อพนักงาน:</string>
+
+    <string name="order">ออเดอร์</string>
+    <string name="macarons">มาการอง</string>
+    <string name="drinks">เครื่องดื่ม</string>
+    <string name="desserts">ของหวาน</string>
+    <string name="ice_cream">ไอศกรีม</string>
+    <string name="thai_dishes">อาหารไทย</string>
+    <string name="fruits">ผลไม้</string>
+
+
+    <string name="stamford_setting_header">การตั้งค่า Stamford POS</string>
+    <string name="order_manager">ผู้จัดการคำสั่งซื้อ</string>
+    <string name="search_contact">ค้นหาผู้ติดต่อ</string>
+    <string name="setup_branch">ตั้งค่าสาขา</string>
+    <string name="update_branch">อัพเดทสาขา</string>
+    <string name="change_ui_setting">เปลี่ยนการตั้งค่า UI</string>
+    <string name="upload_daily_report">อัพโหลดรายงานประจำวัน</string>
+    <string name="upload_image_to_remote_server">อัปโหลดรูปภาพไปยังเซิร์ฟเวอร์ระยะไกล</string>
+    <string name="submit_orders_to_remote_server">ส่งคำสั่งซื้อไปยังเซิร์ฟเวอร์ระยะไกล</string>
+    <string name="retrieve_orders_from_remote_server">รับคำสั่งซื้อจากเซิร์ฟเวอร์ระยะไกล</string>
+
+
+    <string name="id">รหัส</string>
+    <string name="order_local_id">สั่งซื้อ ID ท้องถิ่น</string>
+    <string name="branch_id">รหัสสาขา</string>
+    <string name="create_at">สร้างที่</string>
+    <string name="update_at">อัพเดทที่</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remember_me">จดจำฉัน</string>
+    <string name="preference_file_key">com.stamford.pos22021.secret_pref</string>
+
+    <string name="credential_stored_key">credential_stored_key</string>
+    <string name="username_key">username_key</string>
+    <string name="password_key">password_key</string>
+    <string name="keyBytes_key">pass_key</string>
+    <string name="salt_key">salt_key</string>
+    <string name="iv_key">iv_key</string>
+    <string name="total_amount_str">จำนวนเงินทั้งหมด= %d</string>
+
+
+</resources>

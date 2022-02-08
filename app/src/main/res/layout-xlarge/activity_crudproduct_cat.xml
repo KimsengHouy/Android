@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/AddProductTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_product"
+        android:textColor="#4F08A3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <LinearLayout
+        android:id="@+id/OrderAct1"
+        android:layout_width="966dp"
+        android:layout_height="292dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257">
+
+        <Button
+            android:id="@+id/Mac1Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="Mac1ButtonClicked"
+            android:text="@string/macarons" />
+
+        <Button
+            android:id="@+id/DrinksBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="DrinksBtnButtonClicked"
+            android:text="@string/drinks" />
+
+        <Button
+            android:id="@+id/DessertBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="DessertBtnClicked"
+            android:text="@string/desserts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/OrderAct3"
+        android:layout_width="966dp"
+        android:layout_height="292dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94">
+
+        <Button
+            android:id="@+id/IceCreamBtn"
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="IceCreamBtnClicked"
+            android:text="@string/ice_cream" />
+
+        <Button
+            android:id="@+id/ThaiBtn"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="ThaiBtnClicked"
+            android:text="@string/thai_dishes" />
+
+        <Button
+            android:id="@+id/FruitBtn"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:onClick="FruitBtnClicked"
+            android:text="@string/fruits" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

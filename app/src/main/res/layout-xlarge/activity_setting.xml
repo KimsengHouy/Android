@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/SettingTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="476dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/stamford_setting_header"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#4F08A3"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_orderManager"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:layout_margin="40dp"
+        android:text="@string/order_manager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_searchContact"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:layout_margin="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/search_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="636dp"
+        android:layout_height="800dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/SetupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/setup_branch" />
+
+        <Button
+            android:id="@+id/UpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/update_branch" />
+
+        <Button
+            android:id="@+id/ChangeUIBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/change_ui_setting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_left_panel"
+        android:layout_width="642dp"
+        android:layout_height="796dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/UploadDailyReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/upload_daily_report" />
+
+        <Button
+            android:id="@+id/UploadImagesToRemoteServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/upload_image_to_remote_server" />
+
+        <Button
+            android:id="@+id/SubmitOrderToRemoteServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/submit_orders_to_remote_server" />
+
+        <Button
+            android:id="@+id/RetriveOrderFromRemoteServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/retrieve_orders_from_remote_server" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

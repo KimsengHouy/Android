@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stamford.pos22021">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PoS22021"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CRUDProductCat"
+            android:exported="false" />
+        <activity
+            android:name=".OrderManager"
+            android:exported="false" />
+        <activity
+            android:name=".OrderViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".ContactProvider"
+            android:exported="false" />
+        <activity
+            android:name=".ProductCRUDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommandCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderProductCatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductCatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PoSDatabase"
+            android:exported="false" />
+
+        <service
+            android:name=".Dta"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Macaron"
+            android:exported="false" />
+        <activity
+            android:name=".Drink"
+            android:exported="false" />
+        <activity
+            android:name=".Order"
+            android:exported="false" />
+        <activity
+            android:name=".Product"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.stamford.pos22021.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".PlayMusicInBGService" />
+
+        <receiver android:name=".PlayMusicBroadcastReceiver" />
+    </application>
+
+</manifest>
