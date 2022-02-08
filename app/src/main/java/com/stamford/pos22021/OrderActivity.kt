@@ -58,9 +58,17 @@ class OrderActivity : AppCompatActivity() {
 
         val catID = intent.getIntExtra("CatID", totalAmount)
 
-        when (catID) {
 
+        when (catID) {
             MACARON_CAT_ID -> {
+                Log.d(TAG, "intenis,lkk= ${intent}")
+
+                val bundle = intent.extras
+                if (bundle != null) {
+                    for (key in bundle.keySet()) {
+                        Log.e(TAG, key + "Intent22 : sdfsd " + if (bundle[key] != null) bundle[key] else "NULL")
+                    }
+                }
 
                 val rvMacarons = findViewById<View>(R.id.rvProductList) as RecyclerView
 

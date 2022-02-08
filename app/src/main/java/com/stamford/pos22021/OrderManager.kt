@@ -33,6 +33,8 @@ const val BASE_URL = "http://10.0.2.2/ITE343/pos_api/public/"
 
 class OrderManager : AppCompatActivity() {
 
+
+
     lateinit var myAdapter: OrderManagerAdapter
     lateinit var linearLayoutManager: LinearLayoutManager
 
@@ -50,6 +52,8 @@ class OrderManager : AppCompatActivity() {
 
 
     }
+
+
 
     private fun getMyOrderData() {
         val retrofitBuilder = Retrofit.Builder()
@@ -71,9 +75,6 @@ class OrderManager : AppCompatActivity() {
                 myAdapter.notifyDataSetChanged()
                 rvOderList.adapter = myAdapter
 
-
-
-
             }
 
 
@@ -83,6 +84,9 @@ Log.d("OrderManager", "onFailure: "+t.message)
             }
         })
     }
+
+
+
 
 
 

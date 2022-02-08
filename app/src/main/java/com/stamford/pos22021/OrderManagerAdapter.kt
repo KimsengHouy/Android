@@ -1,19 +1,22 @@
 package com.stamford.pos22021
 
+import android.content.ContentValues.TAG
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataItem>): RecyclerView.Adapter<OrderManagerAdapter.ViewHolder>() {
 
 
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)  {
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)  {
 
         var id: TextView
         var order_local_id: TextView
@@ -35,12 +38,14 @@ class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataI
             delele = itemView.findViewById(R.id.deleteOrder)
         }
 
+
+
     }
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.order_layout,parent,false)
-        return ViewHolder((itemView))
+        return ViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -66,3 +71,5 @@ class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataI
 
 
 }
+
+

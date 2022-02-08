@@ -146,6 +146,7 @@
             android:layout_marginStart="1180dp"
             android:text="Edit"
             android:textSize="8sp"
+            android:background="@android:color/holo_orange_dark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,6 +157,7 @@
             android:layout_marginTop="32dp"
             android:text="Delete"
             android:textSize="8sp"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.983"
             app:layout_constraintStart_toStartOf="parent"
