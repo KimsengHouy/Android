@@ -7,7 +7,7 @@ class Macaron (Name: String, Price: Int, ID: Long, Color: String, Quantity: Int)
     override val name : String = Name
     override val price: Int = Price
     override val id: Long = ID
-    val quantity: Int = Quantity
+    var quantity: Int = Quantity
     val color : String = Color
 
 

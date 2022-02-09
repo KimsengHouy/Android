@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class OrderListAdapter( private val orderList: List<Macaron>) : RecyclerView.Adapter<OrderListAdapter.ViewHolder>() {
+class OrderListAdapter6(private val orderList: List<Fruit>) : RecyclerView.Adapter<OrderListAdapter6.ViewHolder>() {
     inner class ViewHolder(
         listItemView: View,
     ) : RecyclerView.ViewHolder(listItemView) {
@@ -30,8 +30,8 @@ class OrderListAdapter( private val orderList: List<Macaron>) : RecyclerView.Ada
 
     }
 
-    override fun onBindViewHolder(holder:OrderListAdapter.ViewHolder, position: Int) {
-        val item:Macaron = orderList[position]
+    override fun onBindViewHolder(holder:OrderListAdapter6.ViewHolder, position: Int) {
+        val item:Fruit = orderList[position]
 
         val itemTextView = holder.itemnameTextView
         val itempriceView = holder.itempriceTextView
@@ -45,4 +45,6 @@ class OrderListAdapter( private val orderList: List<Macaron>) : RecyclerView.Ada
     override fun getItemCount(): Int {
         return orderList.size
     }
+
+
 }

@@ -16,9 +16,9 @@
     <string name="retrieve_order">เรียกค้นคำสั่งซื้อ</string>
     <string name="submit_order">ส่งคำสั่งซื้อ</string>
     <string name="baht">บาท</string>
-    <string name="branch_name">ชื่อสาขา:</string>
-    <string name="staff_id">รหัสพนักงาน:</string>
-    <string name="staff_name">ชื่อพนักงาน:</string>
+    <string name="branch_name">ชื่อสาขา:     Stamford</string>
+    <string name="staff_name">ชื่อพนักงาน:     seng1</string>
+    <string name="staff_id">รหัสพนักงาน:     1</string>
 
     <string name="order">ออเดอร์</string>
     <string name="macarons">มาการอง</string>
@@ -46,6 +46,11 @@
     <string name="branch_id">รหัสสาขา</string>
     <string name="create_at">สร้างที่</string>
     <string name="update_at">อัพเดทที่</string>
+
+
+    <string name="product_name">ชื่อผลิตภัณฑ์</string>
+    <string name="product_price">ราคา</string>
+    <string name="product_quantity">ปริมาณ</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

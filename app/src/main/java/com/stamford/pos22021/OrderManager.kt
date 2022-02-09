@@ -8,6 +8,7 @@ import android.util.Property
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -51,7 +52,12 @@ class OrderManager : AppCompatActivity() {
         getMyOrderData()
 
 
+
+
     }
+
+
+
 
 
 
@@ -75,7 +81,20 @@ class OrderManager : AppCompatActivity() {
                 myAdapter.notifyDataSetChanged()
                 rvOderList.adapter = myAdapter
 
+                val swipeDelete = object: SwipeToDeleteCallback(this@OrderManager){
+                    override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                        myAdapter.deleteItem(viewHolder.adapterPosition)
+                    }
+                }
+
+                val touchHelper = ItemTouchHelper(swipeDelete)
+                touchHelper.attachToRecyclerView(rvOderList)
+
+
+
             }
+
+
 
 
 
@@ -84,9 +103,6 @@ Log.d("OrderManager", "onFailure: "+t.message)
             }
         })
     }
-
-
-
 
 
 

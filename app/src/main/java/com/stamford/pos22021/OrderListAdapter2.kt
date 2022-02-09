@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class OrderListAdapter( private val orderList: List<Macaron>) : RecyclerView.Adapter<OrderListAdapter.ViewHolder>() {
+class OrderListAdapter2(private val orderList: List<Drink>) : RecyclerView.Adapter<OrderListAdapter2.ViewHolder>() {
     inner class ViewHolder(
         listItemView: View,
     ) : RecyclerView.ViewHolder(listItemView) {
@@ -30,8 +30,8 @@ class OrderListAdapter( private val orderList: List<Macaron>) : RecyclerView.Ada
 
     }
 
-    override fun onBindViewHolder(holder:OrderListAdapter.ViewHolder, position: Int) {
-        val item:Macaron = orderList[position]
+    override fun onBindViewHolder(holder:OrderListAdapter2.ViewHolder, position: Int) {
+        val item:Drink = orderList[position]
 
         val itemTextView = holder.itemnameTextView
         val itempriceView = holder.itempriceTextView

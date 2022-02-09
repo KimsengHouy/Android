@@ -11,6 +11,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
+
+
 class MacaronAdapter (
     private val nMacarons: List<Macaron>,
     private val onItemClicked: (Macaron) -> Unit
@@ -36,16 +38,20 @@ class MacaronAdapter (
 
         init {
             addProductButton.setOnClickListener {
+                OrderActivity.Condition ="addProductButton"
+
                 onItemClicked_fun(adapterPosition)
+
             }
             delProductButton.setOnClickListener{
+                OrderActivity.Condition ="delProductButton"
                 onItemClicked_fun(adapterPosition)
             }
         }
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MacaronAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
 

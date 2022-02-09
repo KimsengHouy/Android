@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="528dp"
         android:text="@string/command_center"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

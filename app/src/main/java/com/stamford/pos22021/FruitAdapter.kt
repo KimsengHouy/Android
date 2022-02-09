@@ -33,6 +33,19 @@ class FruitAdapter (
         val productPriceTextView: TextView = listItemView.findViewById<TextView>(R.id.textView_productPrice)
         val addProductButton: Button = listItemView.findViewById<Button>(R.id.button_product_add)
         val delProductButton: Button = listItemView.findViewById<Button>(R.id.button_product_del)
+
+        init {
+            addProductButton.setOnClickListener {
+                OrderActivity.Condition ="addProductButton"
+
+                onItemClicked_fun(adapterPosition)
+
+            }
+            delProductButton.setOnClickListener{
+                OrderActivity.Condition ="delProductButton"
+                onItemClicked_fun(adapterPosition)
+            }
+        }
     }
 
 

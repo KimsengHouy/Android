@@ -11,12 +11,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.ItemTouchHelper
+
+
+
 
 class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataItem>): RecyclerView.Adapter<OrderManagerAdapter.ViewHolder>() {
 
+    var itemList = arrayListOf<MyOrderDataItem>()
 
-
-    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)  {
+    inner class ViewHolder(itemView: View,   onItemClicked_fun: (Int) -> Unit): RecyclerView.ViewHolder(itemView)  {
 
         var id: TextView
         var order_local_id: TextView
@@ -38,6 +42,14 @@ class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataI
             delele = itemView.findViewById(R.id.deleteOrder)
         }
 
+        init {
+            delele.setOnClickListener {
+                onItemClicked_fun(adapterPosition)
+                Toast.makeText(context, "Delete Button Click", Toast.LENGTH_SHORT).show()
+
+            }
+        }
+
 
 
     }
@@ -45,7 +57,9 @@ class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataI
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.order_layout,parent,false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView) {
+
+        }
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -61,15 +75,18 @@ class OrderManagerAdapter(val context: Context, val orderList: List<MyOrderDataI
 
     }
 
-
-
     override fun getItemCount(): Int {
         return  orderList.size
     }
 
-
-
+fun deleteItem(index:Int) {
+    itemList.removeAt(index)
+    notifyDataSetChanged()
+}
 
 }
+
+
+
 
 

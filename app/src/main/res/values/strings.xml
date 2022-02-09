@@ -15,9 +15,9 @@
     <string name="retrieve_order">Retrieve Order </string>
     <string name="submit_order">Submit Order</string>
     <string name="baht">Baht</string>
-    <string name="branch_name">Branch Name:</string>
-    <string name="staff_id">Staff ID:</string>
-    <string name="staff_name">Staff Name:</string>
+    <string name="branch_name">Branch Name:     Stamford</string>
+    <string name="staff_name">Staff Name:     seng1</string>
+    <string name="staff_id">Staff ID:     1</string>
 
     <string name="order">Order</string>
     <string name="macarons">Macarons</string>
@@ -45,6 +45,10 @@
     <string name="branch_id">Branch ID</string>
     <string name="create_at">Created At</string>
     <string name="update_at">Updated At</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Price</string>
+    <string name="product_quantity">Quantity</string>
     
 
     <!-- TODO: Remove or change this placeholder text -->
