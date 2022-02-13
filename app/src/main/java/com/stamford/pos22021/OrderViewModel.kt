@@ -6,6 +6,8 @@ import androidx.lifecycle.ViewModel
 
 class OrderViewModel: ViewModel() {
 
+//    var totalAmount: Int = 0
+
     val totalAmount: MutableLiveData<Int> by lazy {
         MutableLiveData<Int>(0)
     }

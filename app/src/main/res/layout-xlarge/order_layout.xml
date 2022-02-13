@@ -10,6 +10,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
         android:layout_width="match_parent"
         android:layout_height="75dp">
 
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="444dp"
             android:layout_marginTop="10dp"
-            android:text="@string/staff_id"
+            android:text="@string/staff_id1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,26 +141,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/editOrder"
-            android:layout_width="70dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="1180dp"
-            android:text="Edit"
-            android:textSize="8sp"
-            android:background="@android:color/holo_orange_dark"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/deleteOrder"
-            android:layout_width="70dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="32dp"
-            android:text="Delete"
-            android:textSize="8sp"
-            android:background="@android:color/holo_red_dark"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.983"
+            android:id="@+id/buttonDelete"
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="1200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_baseline_delete_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

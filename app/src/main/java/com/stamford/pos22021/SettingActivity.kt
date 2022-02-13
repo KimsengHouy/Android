@@ -60,7 +60,7 @@ class SettingActivity : AppCompatActivity() {
         btnOrderManager.setOnClickListener {
             Toast.makeText(this, "Kimseng has clicked the order manager button", Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, OrderManager::class.java)
+            val intent = Intent(this, OrderManager2::class.java)
             startActivity(intent)
         }
 
@@ -162,7 +162,7 @@ class SettingActivity : AppCompatActivity() {
                         for (i in 0 until response.length()) {
                             val order = response.getJSONObject(i)
 
-                            Log.i(TAG, "Order $i = ${order.get("id")}, branch ID is = ${order.get("branch_id")}")
+                            Log.i(TAG, "Order $i = ${order.get("id")}, branch ID is = ${order.get("branch_id")}, Staff ID is = ${order.get("staff_id")}")
                         }
                     },
                     {

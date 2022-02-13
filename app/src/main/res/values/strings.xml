@@ -18,6 +18,7 @@
     <string name="branch_name">Branch Name:     Stamford</string>
     <string name="staff_name">Staff Name:     seng1</string>
     <string name="staff_id">Staff ID:     1</string>
+    <string name="staff_id1">Staff ID</string>
 
     <string name="order">Order</string>
     <string name="macarons">Macarons</string>
@@ -38,8 +39,8 @@
     <string name="upload_image_to_remote_server">Upload Image To Remote Server</string>
     <string name="submit_orders_to_remote_server">Submit Orders To Remote Server</string>
     <string name="retrieve_orders_from_remote_server">Retrieve Orders From Remote Server</string>
-    
-    
+
+
     <string name="id">ID</string>
     <string name="order_local_id">Order Local ID</string>
     <string name="branch_id">Branch ID</string>
@@ -49,7 +50,7 @@
     <string name="product_name">Product Name</string>
     <string name="product_price">Price</string>
     <string name="product_quantity">Quantity</string>
-    
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -23,10 +23,22 @@
         android:theme="@style/Theme.PoS22021"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EditOrderLine"
+            android:exported="false" />
+        <activity
+            android:name=".OrderLineActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.stamford.OrderLineActivity"
+            android:exported="false" />
+        <activity
             android:name=".CRUDProductCat"
             android:exported="false" />
         <activity
             android:name=".OrderManager"
+            android:exported="false" />
+        <activity
+            android:name=".OrderManager2"
             android:exported="false" />
         <activity
             android:name=".OrderViewModel"

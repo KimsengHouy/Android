@@ -19,6 +19,7 @@
     <string name="branch_name">ชื่อสาขา:     Stamford</string>
     <string name="staff_name">ชื่อพนักงาน:     seng1</string>
     <string name="staff_id">รหัสพนักงาน:     1</string>
+    <string name="staff_id1">รหัสพนักงาน</string>
 
     <string name="order">ออเดอร์</string>
     <string name="macarons">มาการอง</string>

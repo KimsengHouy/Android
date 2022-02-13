@@ -47,14 +47,18 @@ class OrderActivity : AppCompatActivity() {
 
         val total_price_tv = findViewById<TextView>(R.id.total_price_textView)
 
+        //task1
+        //define property totalAmount with value 0
 
-//        val amountObserver = Observer<Int> { newAmount ->
-//
-//            total_price_tv.text = newAmount.toString()
-//
-//        }
+        //total_price_tv.text = getString(R.string.total_amount_str, 0)
 
-//        model.totalAmount.observe(this, amountObserver)
+        //handle configuration changes
+
+        //total_price_tv.text = getString(R.sting.total_amount_str, model.totalAmount)
+
+        //task2
+        //add live data
+
 
         val amountObserver = Observer<Int> { newAmount ->
 
